@@ -16,7 +16,7 @@ int Eleman_Index_Bul(int dizi[], int aranan); aranan 5 ise; Sonuc: 3 dönecektir 
 		  }
         }
        if(sayac==1){
-       	return gecici;
+       	return gecici+1;
 	   } 
 	   else{
 	   	return -1;
@@ -26,8 +26,12 @@ int Eleman_Index_Bul(int dizi[], int aranan); aranan 5 ise; Sonuc: 3 dönecektir 
 int main() {
 	int dizi[8]={1, 2, 5, 12, 20, 50, 4, 30};
 	int aranan;
-	
-	printf("aradiginiz sayiyi giriniz:");
+	printf("dizi:\n");
+	for(int i=0;dizi[i]!='\0';i++){
+		printf("%d\t",dizi[i]);
+     }
+
+	printf("\naradiginiz sayiyi giriniz:");
 	 scanf("%d",&aranan);
 	 
 	 printf("%d",kacinci(dizi,aranan));
